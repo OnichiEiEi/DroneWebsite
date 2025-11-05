@@ -25,7 +25,7 @@ router.get('/configs/:droneId', async (req, res) => {
   if (cached) return res.json(cached);
 
   try {
-    const configUrl = `${CONFIG_SERVER_URL}?droneId=${droneId}`; // ✅ ส่ง droneId ไปด้วย
+    const configUrl = `${CONFIG_SERVER_URL}?droneId=${droneId}`;
     const response = await axios.get(configUrl, { timeout: 8000 });
 
     const drone = response.data?.drone;
