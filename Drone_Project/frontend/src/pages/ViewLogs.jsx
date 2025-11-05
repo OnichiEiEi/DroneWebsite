@@ -76,17 +76,17 @@ export default function ViewLogs({ droneId }) {
               <span className="text-sm text-gray-600">Page {page}</span>
               <button
                 disabled={!hasMore}
-                onClick={() => setPage(page + 1)} // หรือใช้ totalPages ถ้ามี
-                className="px-4 py-2 bg-blue-500 rounded-md shadow-md hover:bg-blue-700 hover:text-white disabled:opacity-50"
-              >
-                Last
-              </button>
-              <button
-                disabled={!hasMore}
                 onClick={() => setPage(page + 1)}
                 className="px-4 py-2 bg-blue-500 rounded-md shadow-md hover:bg-blue-700 hover:text-white disabled:opacity-50"
               >
                 Next
+              </button>
+              <button
+                disabled={!hasMore}
+                onClick={() => setPage(page + 1)} // หรือใช้ totalPages ถ้ามี
+                className="px-4 py-2 bg-blue-500 rounded-md shadow-md hover:bg-blue-700 hover:text-white disabled:opacity-50"
+              >
+                Last
               </button>
             </div>
           </div>
