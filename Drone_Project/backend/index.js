@@ -14,7 +14,7 @@ const limiter = rateLimit({
 });
 
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: 'https://drone-monitoring-web.vercel.app/'
 }));
 
 app.use(limiter);
